@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Namespace="ApplicationData" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <Association Name="Job_Cleaner">
+    <End Role="Cleaner" Type="ApplicationData.Cleaner" Multiplicity="0..1" />
+    <End Role="Job" Type="ApplicationData.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cleaner">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="Job_Cleaner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Job_Client">
+    <End Role="Client" Type="ApplicationData.Client" Multiplicity="1" />
+    <End Role="Job" Type="ApplicationData.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="Job_Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cleaner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="QueryString" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="HourlyRate" Type="Decimal" Nullable="false" Precision="18" Scale="2" ConcurrencyMode="Fixed" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="EndDate" Type="DateTime" ConcurrencyMode="Fixed" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="AddressLine2" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Postcode" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="CountryRegion" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Jobs" Relationship="ApplicationData.Job_Cleaner" ToRole="Job" FromRole="Cleaner" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address1" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Address2" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Postcode" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Region" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Phone" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Email" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="QueryString" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Jobs" Relationship="ApplicationData.Job_Client" ToRole="Job" FromRole="Client" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="18" Scale="2" ConcurrencyMode="Fixed" />
+    <Property Name="CleanersRate" Type="Decimal" Nullable="false" Precision="18" Scale="2" ConcurrencyMode="Fixed" />
+    <Property Name="PerPeriod" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Recurance" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Note" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="QueryString" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Job_Cleaner" Type="Int32" ConcurrencyMode="Fixed" />
+    <Property Name="Job_Client" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <NavigationProperty Name="Cleaner" Relationship="ApplicationData.Job_Cleaner" ToRole="Cleaner" FromRole="Job" />
+    <NavigationProperty Name="Client" Relationship="ApplicationData.Job_Client" ToRole="Client" FromRole="Job" />
+  </EntityType>
+  <EntityContainer Name="ApplicationDataObjectContext">
+    <EntitySet Name="Cleaners" EntityType="ApplicationData.Cleaner" />
+    <EntitySet Name="Clients" EntityType="ApplicationData.Client" />
+    <EntitySet Name="Jobs" EntityType="ApplicationData.Job" />
+    <AssociationSet Name="Job_Cleaner" Association="ApplicationData.Job_Cleaner">
+      <End Role="Cleaner" EntitySet="Cleaners" />
+      <End Role="Job" EntitySet="Jobs" />
+    </AssociationSet>
+    <AssociationSet Name="Job_Client" Association="ApplicationData.Job_Client">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Job" EntitySet="Jobs" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

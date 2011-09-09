@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Cleaning_Guru.Client
+</name>
+</assembly>
+<members>
+<member name="P:LightSwitchApplication.CleanersJobDetail.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CleanersJobDetail.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.CleanersJobDetail.Cleaners">
+	<summary>
+ Gets the Cleaners visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CleanersJobDetail.Jobs">
+	<summary>
+ Gets the Jobs visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewJob.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewJob.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.AllJobs.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.AllJobs.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="P:LightSwitchApplication.AllJobs.Jobs">
+	<summary>
+ Gets the Jobs visual collection. The collection contains all records currently shown on the respective list or grid control.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewClient.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.CreateNewClient.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCleanersJobDetail">
+	<summary>
+ Opens the ShowCleanersJobDetail screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewJob">
+	<summary>
+ Opens a new instance of the ShowCreateNewJob screen.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowAllJobs">
+	<summary>
+ Opens the ShowAllJobs screen.  If the screen is already opened, it is activated and shown.
+ </summary>
+</member><member name="M:LightSwitchApplication.Application.ShowCreateNewClient">
+	<summary>
+ Opens a new instance of the ShowCreateNewClient screen.
+ </summary>
+</member>
+</members>
+</doc>

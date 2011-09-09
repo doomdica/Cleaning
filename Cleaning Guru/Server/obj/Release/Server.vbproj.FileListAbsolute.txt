@@ -1,0 +1,13 @@
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\Application.Server.dll.config
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\Application.Server.dll
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\Application.Server.pdb
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\Cleaning_Guru.Server.xml
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\Application.Common.dll
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\BingMapControl.Common.dll
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\BingMapControl.Server.dll
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\bin\Release\LightSwitchFilter.Server.dll
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\obj\Release\Application.Server.dll
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\obj\Release\Cleaning_Guru.Server.xml
+C:\Users\Lesley\Documents\Visual Studio 2010\Projects\Cleaning Guru\Cleaning Guru\Server\obj\Release\Application.Server.pdb

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Application.ServerGenerated
+</name>
+</assembly>
+<members>
+<member name="M:ApplicationData.Implementation.ApplicationDataObjectContext.#ctor">
+	<summary>
+ Initializes a new ApplicationDataObjectContext object using the connection string found in the 'ApplicationDataObjectContext' section of the application configuration file.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.ApplicationDataObjectContext.#ctor(System.String)">
+	<summary>
+ Initialize a new ApplicationDataObjectContext object.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.ApplicationDataObjectContext.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+ Initialize a new ApplicationDataObjectContext object.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.ApplicationDataObjectContext.Cleaners">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.ApplicationDataObjectContext.Clients">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.ApplicationDataObjectContext.Jobs">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.ApplicationDataObjectContext.AddToCleaners(ApplicationData.Implementation.Cleaner)">
+	<summary>
+ Deprecated Method for adding a new object to the Cleaners EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.ApplicationDataObjectContext.AddToClients(ApplicationData.Implementation.Client)">
+	<summary>
+ Deprecated Method for adding a new object to the Clients EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.ApplicationDataObjectContext.AddToJobs(ApplicationData.Implementation.Job)">
+	<summary>
+ Deprecated Method for adding a new object to the Jobs EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="T:ApplicationData.Implementation.ApplicationDataObjectContext">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.Cleaner.CreateCleaner(System.Int32,System.String,System.String,System.Decimal,System.DateTime,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Create a new Cleaner object.
+ </summary>
+	<param name="id">Initial value of the Id property.</param>
+	<param name="firstName">Initial value of the FirstName property.</param>
+	<param name="lastName">Initial value of the LastName property.</param>
+	<param name="hourlyRate">Initial value of the HourlyRate property.</param>
+	<param name="startDate">Initial value of the StartDate property.</param>
+	<param name="phone">Initial value of the Phone property.</param>
+	<param name="email">Initial value of the Email property.</param>
+	<param name="addressLine1">Initial value of the AddressLine1 property.</param>
+	<param name="city">Initial value of the City property.</param>
+	<param name="postcode">Initial value of the Postcode property.</param>
+	<param name="countryRegion">Initial value of the CountryRegion property.</param>
+</member><member name="P:ApplicationData.Implementation.Cleaner.Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.QueryString">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.FirstName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.LastName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.HourlyRate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.StartDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.EndDate">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.Phone">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.Email">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.AddressLine1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.AddressLine2">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.City">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.Postcode">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.CountryRegion">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Cleaner.Jobs">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:ApplicationData.Implementation.Cleaner">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.Client.CreateClient(System.Int32,System.String,System.String,System.String,System.String,System.String)">
+	<summary>
+ Create a new Client object.
+ </summary>
+	<param name="id">Initial value of the Id property.</param>
+	<param name="name">Initial value of the Name property.</param>
+	<param name="address1">Initial value of the Address1 property.</param>
+	<param name="city">Initial value of the City property.</param>
+	<param name="postcode">Initial value of the Postcode property.</param>
+	<param name="region">Initial value of the Region property.</param>
+</member><member name="P:ApplicationData.Implementation.Client.Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Address1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Address2">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.City">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Postcode">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Region">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Phone">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Email">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.QueryString">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Client.Jobs">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:ApplicationData.Implementation.Client">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:ApplicationData.Implementation.Job.CreateJob(System.Int32,System.DateTime,System.DateTime,System.Decimal,System.String,System.Boolean,System.Int32)">
+	<summary>
+ Create a new Job object.
+ </summary>
+	<param name="id">Initial value of the Id property.</param>
+	<param name="startTime">Initial value of the StartTime property.</param>
+	<param name="endTime">Initial value of the EndTime property.</param>
+	<param name="price">Initial value of the Price property.</param>
+	<param name="recurance">Initial value of the Recurance property.</param>
+	<param name="isDeleted">Initial value of the IsDeleted property.</param>
+	<param name="job_Client">Initial value of the Job_Client property.</param>
+</member><member name="P:ApplicationData.Implementation.Job.Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.StartTime">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.EndTime">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.Price">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.Note">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.QueryString">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.Recurance">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.IsDeleted">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.Job_Cleaner">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.Job_Client">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.Cleaner">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.CleanerReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.Client">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:ApplicationData.Implementation.Job.ClientReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:ApplicationData.Implementation.Job">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member>
+</members>
+</doc>

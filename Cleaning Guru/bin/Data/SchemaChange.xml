@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationSchemaChange xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityChanges>
+    <EntitySchemaChange IsNew="false" OriginalName="Jobs">
+      <PropertyChanges>
+        <EntityPropertySchemaChange IsNew="true" OriginalName="CleanersRate" />
+        <EntityPropertySchemaChange IsNew="true" OriginalName="PerPeriod" />
+      </PropertyChanges>
+    </EntitySchemaChange>
+  </EntityChanges>
+</ApplicationSchemaChange>

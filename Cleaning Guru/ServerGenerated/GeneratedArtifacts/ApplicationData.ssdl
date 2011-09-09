@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="Cleaners" EntityType="ApplicationDataStore.Cleaner" store:Type="Tables" Schema="dbo" Table="Cleaners" />
+    <EntitySet Name="Clients" EntityType="ApplicationDataStore.Client" store:Type="Tables" Schema="dbo" Table="Clients" />
+    <EntitySet Name="Jobs" EntityType="ApplicationDataStore.Job" store:Type="Tables" Schema="dbo" Table="Jobs" />
+    <AssociationSet Name="Job_Cleaner" Association="ApplicationDataStore.Job_Cleaner">
+      <End Role="Cleaner" EntitySet="Cleaners" />
+      <End Role="Job" EntitySet="Jobs" />
+    </AssociationSet>
+    <AssociationSet Name="Job_Client" Association="ApplicationDataStore.Job_Client">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Job" EntitySet="Jobs" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Cleaner">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="QueryString" Type="nvarchar" MaxLength="255" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="HourlyRate" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="AddressLine1" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="AddressLine2" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Postcode" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CountryRegion" Type="nvarchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Address1" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Postcode" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Region" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="QueryString" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="CleanersRate" Type="decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="PerPeriod" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Recurance" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Note" Type="nvarchar" MaxLength="255" />
+    <Property Name="QueryString" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="Job_Cleaner" Type="int" />
+    <Property Name="Job_Client" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="Job_Cleaner">
+    <End Role="Cleaner" Type="ApplicationDataStore.Cleaner" Multiplicity="0..1" />
+    <End Role="Job" Type="ApplicationDataStore.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cleaner">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="Job_Cleaner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Job_Client">
+    <End Role="Client" Type="ApplicationDataStore.Client" Multiplicity="1" />
+    <End Role="Job" Type="ApplicationDataStore.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="Job_Client" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

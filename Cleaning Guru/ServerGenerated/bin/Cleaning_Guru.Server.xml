@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Application.Server
+</name>
+</assembly>
+<members>
+<member name="P:LightSwitchApplication.ApplicationDataService.Application">
+	<summary>
+ Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+ </summary>
+</member><member name="P:LightSwitchApplication.ApplicationDataService.DataWorkspace">
+	<summary>
+ Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+ </summary>
+</member><member name="T:LightSwitchApplication.ApplicationDataService">
+	<summary>
+ Provides members to query and update data in the ApplicationData datasource.
+ </summary>
+</member>
+</members>
+</doc>

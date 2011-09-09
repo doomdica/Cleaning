@@ -325,6 +325,102 @@ Namespace LightSwitchApplication
         ''' </summary>
         <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")> _
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        Public Property StreetAddress1 As String
+            Get
+                Return __Job.DetailsClass.GetValue(Me, __Job.DetailsClass.PropertySetProperties.StreetAddress1)
+            End Get
+            Set
+                __Job.DetailsClass.SetValue(Me, __Job.DetailsClass.PropertySetProperties.StreetAddress1, Value)
+            End Set
+        End Property
+        
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub StreetAddress1_IsReadOnly(ByRef result As Boolean)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub StreetAddress1_Validate(ByVal results As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub StreetAddress1_Changed()
+        End Sub
+
+        ''' <summary>
+        ''' No Modeled Description Available
+        ''' </summary>
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")> _
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        Public Property StreetAddress2 As String
+            Get
+                Return __Job.DetailsClass.GetValue(Me, __Job.DetailsClass.PropertySetProperties.StreetAddress2)
+            End Get
+            Set
+                __Job.DetailsClass.SetValue(Me, __Job.DetailsClass.PropertySetProperties.StreetAddress2, Value)
+            End Set
+        End Property
+        
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub StreetAddress2_IsReadOnly(ByRef result As Boolean)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub StreetAddress2_Validate(ByVal results As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub StreetAddress2_Changed()
+        End Sub
+
+        ''' <summary>
+        ''' No Modeled Description Available
+        ''' </summary>
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")> _
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        Public Property City As String
+            Get
+                Return __Job.DetailsClass.GetValue(Me, __Job.DetailsClass.PropertySetProperties.City)
+            End Get
+            Set
+                __Job.DetailsClass.SetValue(Me, __Job.DetailsClass.PropertySetProperties.City, Value)
+            End Set
+        End Property
+        
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub City_IsReadOnly(ByRef result As Boolean)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub City_Validate(ByVal results As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub City_Changed()
+        End Sub
+
+        ''' <summary>
+        ''' No Modeled Description Available
+        ''' </summary>
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")> _
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
+        Public Property Postcode As String
+            Get
+                Return __Job.DetailsClass.GetValue(Me, __Job.DetailsClass.PropertySetProperties.Postcode)
+            End Get
+            Set
+                __Job.DetailsClass.SetValue(Me, __Job.DetailsClass.PropertySetProperties.Postcode, Value)
+            End Set
+        End Property
+        
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub Postcode_IsReadOnly(ByRef result As Boolean)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub Postcode_Validate(ByVal results As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+        End Sub
+        <Global.System.ComponentModel.EditorBrowsable(Global.System.ComponentModel.EditorBrowsableState.Advanced)> _
+        Private Partial Sub Postcode_Changed()
+        End Sub
+
+        ''' <summary>
+        ''' No Modeled Description Available
+        ''' </summary>
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")> _
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute()> _
         Public Property Cleaner As Global.LightSwitchApplication.Cleaner
             Get
                 Return __Job.DetailsClass.GetValue(Me, __Job.DetailsClass.PropertySetProperties.Cleaner)
@@ -520,6 +616,38 @@ Namespace LightSwitchApplication
                     End Get
                 End Property
                 
+                Public ReadOnly Property StreetAddress1 As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String)
+                    Get
+                        Return TryCast(
+                            MyBase.GetItem(__Job.DetailsClass.PropertySetProperties.StreetAddress1),
+                            Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String))
+                    End Get
+                End Property
+                
+                Public ReadOnly Property StreetAddress2 As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String)
+                    Get
+                        Return TryCast(
+                            MyBase.GetItem(__Job.DetailsClass.PropertySetProperties.StreetAddress2),
+                            Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String))
+                    End Get
+                End Property
+                
+                Public ReadOnly Property City As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String)
+                    Get
+                        Return TryCast(
+                            MyBase.GetItem(__Job.DetailsClass.PropertySetProperties.City),
+                            Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String))
+                    End Get
+                End Property
+                
+                Public ReadOnly Property Postcode As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String)
+                    Get
+                        Return TryCast(
+                            MyBase.GetItem(__Job.DetailsClass.PropertySetProperties.Postcode),
+                            Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String))
+                    End Get
+                End Property
+                
                 Public ReadOnly Property Cleaner As Global.Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty(Of __Job, __Job.DetailsClass, Global.LightSwitchApplication.Cleaner)
                     Get
                         Return TryCast(
@@ -552,6 +680,10 @@ Namespace LightSwitchApplication
                 Shadows Property Note As String
                 Shadows Property QueryString As String
                 Shadows Property IsDeleted As Boolean
+                Shadows Property StreetAddress1 As String
+                Shadows Property StreetAddress2 As String
+                Shadows Property City As String
+                Shadows Property Postcode As String
                 Shadows Property Cleaner As Global.Microsoft.LightSwitch.Internal.IEntityImplementation
                 Shadows Property Client As Global.Microsoft.LightSwitch.Internal.IEntityImplementation
     
@@ -873,6 +1005,130 @@ Namespace LightSwitchApplication
                 End Sub
     
                 <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+                Public Shared ReadOnly StreetAddress1 As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry = _
+                    New Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry( _
+                        "StreetAddress1", _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress1_Stub, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress1_ComputeIsReadOnly, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress1_Validate, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress1_GetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress1_SetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress1_OnValueChanged)
+                Private Shared Sub _StreetAddress1_Stub(c As Global.Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback(Of __Job.DetailsClass, Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data), d As __Job.DetailsClass, sf As Object)
+                    c(d, d._StreetAddress1, sf)
+                End Sub
+                Private Shared Function _StreetAddress1_ComputeIsReadOnly(e As __Job) As Boolean
+                    Dim result As Boolean = False
+                    e.StreetAddress1_IsReadOnly(result)
+                    Return result
+                End Function
+                Private Shared Sub _StreetAddress1_Validate(e As __Job, r As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+                    e.StreetAddress1_Validate(r)
+                End Sub
+                Private Shared Function _StreetAddress1_GetImplementationValue(d As __Job.DetailsClass) As String
+                    Return d.ImplementationEntity.StreetAddress1
+                End Function
+                Private Shared Sub _StreetAddress1_SetImplementationValue(d As __Job.DetailsClass, v As String)
+                    d.ImplementationEntity.StreetAddress1 = v
+                End Sub
+                Private Shared Sub _StreetAddress1_OnValueChanged(e As __Job)
+                    e.StreetAddress1_Changed()
+                End Sub
+    
+                <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+                Public Shared ReadOnly StreetAddress2 As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry = _
+                    New Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry( _
+                        "StreetAddress2", _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress2_Stub, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress2_ComputeIsReadOnly, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress2_Validate, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress2_GetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress2_SetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._StreetAddress2_OnValueChanged)
+                Private Shared Sub _StreetAddress2_Stub(c As Global.Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback(Of __Job.DetailsClass, Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data), d As __Job.DetailsClass, sf As Object)
+                    c(d, d._StreetAddress2, sf)
+                End Sub
+                Private Shared Function _StreetAddress2_ComputeIsReadOnly(e As __Job) As Boolean
+                    Dim result As Boolean = False
+                    e.StreetAddress2_IsReadOnly(result)
+                    Return result
+                End Function
+                Private Shared Sub _StreetAddress2_Validate(e As __Job, r As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+                    e.StreetAddress2_Validate(r)
+                End Sub
+                Private Shared Function _StreetAddress2_GetImplementationValue(d As __Job.DetailsClass) As String
+                    Return d.ImplementationEntity.StreetAddress2
+                End Function
+                Private Shared Sub _StreetAddress2_SetImplementationValue(d As __Job.DetailsClass, v As String)
+                    d.ImplementationEntity.StreetAddress2 = v
+                End Sub
+                Private Shared Sub _StreetAddress2_OnValueChanged(e As __Job)
+                    e.StreetAddress2_Changed()
+                End Sub
+    
+                <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+                Public Shared ReadOnly City As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry = _
+                    New Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry( _
+                        "City", _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._City_Stub, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._City_ComputeIsReadOnly, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._City_Validate, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._City_GetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._City_SetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._City_OnValueChanged)
+                Private Shared Sub _City_Stub(c As Global.Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback(Of __Job.DetailsClass, Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data), d As __Job.DetailsClass, sf As Object)
+                    c(d, d._City, sf)
+                End Sub
+                Private Shared Function _City_ComputeIsReadOnly(e As __Job) As Boolean
+                    Dim result As Boolean = False
+                    e.City_IsReadOnly(result)
+                    Return result
+                End Function
+                Private Shared Sub _City_Validate(e As __Job, r As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+                    e.City_Validate(r)
+                End Sub
+                Private Shared Function _City_GetImplementationValue(d As __Job.DetailsClass) As String
+                    Return d.ImplementationEntity.City
+                End Function
+                Private Shared Sub _City_SetImplementationValue(d As __Job.DetailsClass, v As String)
+                    d.ImplementationEntity.City = v
+                End Sub
+                Private Shared Sub _City_OnValueChanged(e As __Job)
+                    e.City_Changed()
+                End Sub
+    
+                <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+                Public Shared ReadOnly Postcode As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry = _
+                    New Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Entry( _
+                        "Postcode", _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._Postcode_Stub, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._Postcode_ComputeIsReadOnly, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._Postcode_Validate, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._Postcode_GetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._Postcode_SetImplementationValue, _
+                        AddressOf __Job.DetailsClass.PropertySetProperties._Postcode_OnValueChanged)
+                Private Shared Sub _Postcode_Stub(c As Global.Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback(Of __Job.DetailsClass, Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data), d As __Job.DetailsClass, sf As Object)
+                    c(d, d._Postcode, sf)
+                End Sub
+                Private Shared Function _Postcode_ComputeIsReadOnly(e As __Job) As Boolean
+                    Dim result As Boolean = False
+                    e.Postcode_IsReadOnly(result)
+                    Return result
+                End Function
+                Private Shared Sub _Postcode_Validate(e As __Job, r As Global.Microsoft.LightSwitch.EntityValidationResultsBuilder)
+                    e.Postcode_Validate(r)
+                End Sub
+                Private Shared Function _Postcode_GetImplementationValue(d As __Job.DetailsClass) As String
+                    Return d.ImplementationEntity.Postcode
+                End Function
+                Private Shared Sub _Postcode_SetImplementationValue(d As __Job.DetailsClass, v As String)
+                    d.ImplementationEntity.Postcode = v
+                End Sub
+                Private Shared Sub _Postcode_OnValueChanged(e As __Job)
+                    e.Postcode_Changed()
+                End Sub
+    
+                <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
                 Public Shared ReadOnly Cleaner As Global.Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty(Of __Job, __Job.DetailsClass, Global.LightSwitchApplication.Cleaner).Entry = _
                     New Global.Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty(Of __Job, __Job.DetailsClass, Global.LightSwitchApplication.Cleaner).Entry( _
                         "Cleaner", _
@@ -981,6 +1237,18 @@ Namespace LightSwitchApplication
             
             <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
             Private _IsDeleted As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, Boolean).Data
+            
+            <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+            Private _StreetAddress1 As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data
+            
+            <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+            Private _StreetAddress2 As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data
+            
+            <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+            Private _City As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data
+            
+            <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
+            Private _Postcode As Global.Microsoft.LightSwitch.Details.Framework.EntityStorageProperty(Of __Job, __Job.DetailsClass, String).Data
             
             <Global.System.Diagnostics.DebuggerBrowsable(Global.System.Diagnostics.DebuggerBrowsableState.Never)> _
             Private _Cleaner As Global.Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty(Of __Job, __Job.DetailsClass, Global.LightSwitchApplication.Cleaner).Data

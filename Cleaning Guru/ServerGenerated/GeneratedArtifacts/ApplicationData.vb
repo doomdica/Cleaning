@@ -16,7 +16,7 @@ Imports System.ComponentModel
 Imports System.Xml.Serialization
 Imports System.Runtime.Serialization
 
-<Assembly: EdmSchemaAttribute("1451634f-03ca-4dc6-ad79-bd08144791c4")>
+<Assembly: EdmSchemaAttribute("f88559ce-cf31-447d-9e35-c601596410be")>
 #Region "EDM Relationship Metadata"
 <Assembly: EdmRelationshipAttribute("ApplicationData", "Job_Cleaner", "Cleaner", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, GetType(ApplicationData.Implementation.Cleaner), "Job", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(ApplicationData.Implementation.Job), True)>
 <Assembly: EdmRelationshipAttribute("ApplicationData", "Job_Client", "Client", System.Data.Metadata.Edm.RelationshipMultiplicity.One, GetType(ApplicationData.Implementation.Client), "Job", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, GetType(ApplicationData.Implementation.Job), True)>
@@ -890,8 +890,12 @@ Namespace ApplicationData.Implementation
         ''' <param name="perPeriod">Initial value of the PerPeriod property.</param>
         ''' <param name="recurance">Initial value of the Recurance property.</param>
         ''' <param name="isDeleted">Initial value of the IsDeleted property.</param>
+        ''' <param name="streetAddress1">Initial value of the StreetAddress1 property.</param>
+        ''' <param name="streetAddress2">Initial value of the StreetAddress2 property.</param>
+        ''' <param name="city">Initial value of the City property.</param>
+        ''' <param name="postcode">Initial value of the Postcode property.</param>
         ''' <param name="job_Client">Initial value of the Job_Client property.</param>
-        Public Shared Function CreateJob(id As Global.System.Int32, startTime As Global.System.DateTime, endTime As Global.System.DateTime, price As Global.System.Decimal, cleanersRate As Global.System.Decimal, perPeriod As Global.System.String, recurance As Global.System.String, isDeleted As Global.System.Boolean, job_Client As Global.System.Int32) As Job
+        Public Shared Function CreateJob(id As Global.System.Int32, startTime As Global.System.DateTime, endTime As Global.System.DateTime, price As Global.System.Decimal, cleanersRate As Global.System.Decimal, perPeriod As Global.System.String, recurance As Global.System.String, isDeleted As Global.System.Boolean, streetAddress1 As Global.System.String, streetAddress2 As Global.System.String, city As Global.System.String, postcode As Global.System.String, job_Client As Global.System.Int32) As Job
             Dim job as Job = New Job
             job.Id = id
             job.StartTime = startTime
@@ -901,6 +905,10 @@ Namespace ApplicationData.Implementation
             job.PerPeriod = perPeriod
             job.Recurance = recurance
             job.IsDeleted = isDeleted
+            job.StreetAddress1 = streetAddress1
+            job.StreetAddress2 = streetAddress2
+            job.City = city
+            job.Postcode = postcode
             job.Job_Client = job_Client
             Return job
         End Function
@@ -1158,6 +1166,106 @@ Namespace ApplicationData.Implementation
         End Sub
     
         Private Partial Sub OnIsDeletedChanged()
+        End Sub
+    
+        ''' <summary>
+        ''' No Metadata Documentation available.
+        ''' </summary>
+        <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
+        <DataMemberAttribute()>
+        Public Property StreetAddress1() As Global.System.String
+            Get
+                Return _StreetAddress1
+            End Get
+            Set
+                OnStreetAddress1Changing(value)
+                ReportPropertyChanging("StreetAddress1")
+                _StreetAddress1 = value
+                ReportPropertyChanged("StreetAddress1")
+                OnStreetAddress1Changed()
+            End Set
+        End Property
+    
+        Private _StreetAddress1 As Global.System.String
+        Private Partial Sub OnStreetAddress1Changing(value As Global.System.String)
+        End Sub
+    
+        Private Partial Sub OnStreetAddress1Changed()
+        End Sub
+    
+        ''' <summary>
+        ''' No Metadata Documentation available.
+        ''' </summary>
+        <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
+        <DataMemberAttribute()>
+        Public Property StreetAddress2() As Global.System.String
+            Get
+                Return _StreetAddress2
+            End Get
+            Set
+                OnStreetAddress2Changing(value)
+                ReportPropertyChanging("StreetAddress2")
+                _StreetAddress2 = value
+                ReportPropertyChanged("StreetAddress2")
+                OnStreetAddress2Changed()
+            End Set
+        End Property
+    
+        Private _StreetAddress2 As Global.System.String
+        Private Partial Sub OnStreetAddress2Changing(value As Global.System.String)
+        End Sub
+    
+        Private Partial Sub OnStreetAddress2Changed()
+        End Sub
+    
+        ''' <summary>
+        ''' No Metadata Documentation available.
+        ''' </summary>
+        <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
+        <DataMemberAttribute()>
+        Public Property City() As Global.System.String
+            Get
+                Return _City
+            End Get
+            Set
+                OnCityChanging(value)
+                ReportPropertyChanging("City")
+                _City = value
+                ReportPropertyChanged("City")
+                OnCityChanged()
+            End Set
+        End Property
+    
+        Private _City As Global.System.String
+        Private Partial Sub OnCityChanging(value As Global.System.String)
+        End Sub
+    
+        Private Partial Sub OnCityChanged()
+        End Sub
+    
+        ''' <summary>
+        ''' No Metadata Documentation available.
+        ''' </summary>
+        <EdmScalarPropertyAttribute(EntityKeyProperty:=false, IsNullable:=false)>
+        <DataMemberAttribute()>
+        Public Property Postcode() As Global.System.String
+            Get
+                Return _Postcode
+            End Get
+            Set
+                OnPostcodeChanging(value)
+                ReportPropertyChanging("Postcode")
+                _Postcode = value
+                ReportPropertyChanged("Postcode")
+                OnPostcodeChanged()
+            End Set
+        End Property
+    
+        Private _Postcode As Global.System.String
+        Private Partial Sub OnPostcodeChanging(value As Global.System.String)
+        End Sub
+    
+        Private Partial Sub OnPostcodeChanged()
         End Sub
     
         ''' <summary>

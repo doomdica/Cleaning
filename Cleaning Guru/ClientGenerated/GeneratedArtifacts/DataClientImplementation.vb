@@ -743,6 +743,74 @@ Namespace LightSwitchApplication.Implementation
         
         <Global.System.Runtime.Serialization.DataMember()> _
         <Global.System.ComponentModel.DataAnnotations.RoundtripOriginal()> _
+        Public Property StreetAddress1() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.StreetAddress1
+            Get
+                Return Me._StreetAddress1
+            End Get
+            Set(ByVal value As String)
+                If Not Global.System.Object.Equals(Me._StreetAddress1, value) Then
+                    Me.RaiseDataMemberChanging("StreetAddress1")
+                    Me.ValidateProperty("StreetAddress1", value)
+                    Me._StreetAddress1 = value
+                    Me.RaiseDataMemberChanged("StreetAddress1")
+                End If
+            End Set
+        End Property
+        Private _StreetAddress1 As String
+        
+        <Global.System.Runtime.Serialization.DataMember()> _
+        <Global.System.ComponentModel.DataAnnotations.RoundtripOriginal()> _
+        Public Property StreetAddress2() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.StreetAddress2
+            Get
+                Return Me._StreetAddress2
+            End Get
+            Set(ByVal value As String)
+                If Not Global.System.Object.Equals(Me._StreetAddress2, value) Then
+                    Me.RaiseDataMemberChanging("StreetAddress2")
+                    Me.ValidateProperty("StreetAddress2", value)
+                    Me._StreetAddress2 = value
+                    Me.RaiseDataMemberChanged("StreetAddress2")
+                End If
+            End Set
+        End Property
+        Private _StreetAddress2 As String
+        
+        <Global.System.Runtime.Serialization.DataMember()> _
+        <Global.System.ComponentModel.DataAnnotations.RoundtripOriginal()> _
+        Public Property City() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.City
+            Get
+                Return Me._City
+            End Get
+            Set(ByVal value As String)
+                If Not Global.System.Object.Equals(Me._City, value) Then
+                    Me.RaiseDataMemberChanging("City")
+                    Me.ValidateProperty("City", value)
+                    Me._City = value
+                    Me.RaiseDataMemberChanged("City")
+                End If
+            End Set
+        End Property
+        Private _City As String
+        
+        <Global.System.Runtime.Serialization.DataMember()> _
+        <Global.System.ComponentModel.DataAnnotations.RoundtripOriginal()> _
+        Public Property Postcode() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.Postcode
+            Get
+                Return Me._Postcode
+            End Get
+            Set(ByVal value As String)
+                If Not Global.System.Object.Equals(Me._Postcode, value) Then
+                    Me.RaiseDataMemberChanging("Postcode")
+                    Me.ValidateProperty("Postcode", value)
+                    Me._Postcode = value
+                    Me.RaiseDataMemberChanged("Postcode")
+                End If
+            End Set
+        End Property
+        Private _Postcode As String
+        
+        <Global.System.Runtime.Serialization.DataMember()> _
+        <Global.System.ComponentModel.DataAnnotations.RoundtripOriginal()> _
         Public Property Job_Cleaner() As Global.System.Nullable(Of Integer)
             Get
                 Return Me._Job_Cleaner

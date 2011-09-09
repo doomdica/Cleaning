@@ -52,6 +52,10 @@
           <ScalarProperty Name="Note" ColumnName="Note" />
           <ScalarProperty Name="QueryString" ColumnName="QueryString" />
           <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="StreetAddress1" ColumnName="StreetAddress1" />
+          <ScalarProperty Name="StreetAddress2" ColumnName="StreetAddress2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Postcode" ColumnName="Postcode" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

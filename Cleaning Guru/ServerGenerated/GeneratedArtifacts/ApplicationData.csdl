@@ -74,6 +74,10 @@
     <Property Name="Note" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
     <Property Name="QueryString" Type="String" MaxLength="255" ConcurrencyMode="Fixed" />
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="StreetAddress1" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="StreetAddress2" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
+    <Property Name="Postcode" Type="String" Nullable="false" MaxLength="255" ConcurrencyMode="Fixed" />
     <Property Name="Job_Cleaner" Type="Int32" ConcurrencyMode="Fixed" />
     <Property Name="Job_Client" Type="Int32" Nullable="false" ConcurrencyMode="Fixed" />
     <NavigationProperty Name="Cleaner" Relationship="ApplicationData.Job_Cleaner" ToRole="Cleaner" FromRole="Job" />

@@ -61,6 +61,10 @@
     <Property Name="Note" Type="nvarchar" MaxLength="255" />
     <Property Name="QueryString" Type="nvarchar" MaxLength="255" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
+    <Property Name="StreetAddress1" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="StreetAddress2" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Postcode" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="Job_Cleaner" Type="int" />
     <Property Name="Job_Client" Type="int" Nullable="false" />
   </EntityType>

@@ -694,6 +694,42 @@ Namespace ApplicationData.Implementation
             End Set
         End Property
         
+        Private Property _StreetAddress1Implementation() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.StreetAddress1
+            Get
+                Return Me.StreetAddress1
+            End Get
+            Set(ByVal value As String)
+                Me.StreetAddress1 = value
+            End Set
+        End Property
+        
+        Private Property _StreetAddress2Implementation() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.StreetAddress2
+            Get
+                Return Me.StreetAddress2
+            End Get
+            Set(ByVal value As String)
+                Me.StreetAddress2 = value
+            End Set
+        End Property
+        
+        Private Property _CityImplementation() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.City
+            Get
+                Return Me.City
+            End Get
+            Set(ByVal value As String)
+                Me.City = value
+            End Set
+        End Property
+        
+        Private Property _PostcodeImplementation() As String Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.Postcode
+            Get
+                Return Me.Postcode
+            End Get
+            Set(ByVal value As String)
+                Me.Postcode = value
+            End Set
+        End Property
+        
         Private Property _CleanerImplementation() As Global.Microsoft.LightSwitch.Internal.IEntityImplementation Implements Global.LightSwitchApplication.Job.DetailsClass.IImplementation.Cleaner
             Get
                 Return Me.Cleaner

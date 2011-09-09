@@ -5,6 +5,10 @@
       <PropertyChanges>
         <EntityPropertySchemaChange IsNew="true" OriginalName="CleanersRate" />
         <EntityPropertySchemaChange IsNew="true" OriginalName="PerPeriod" />
+        <EntityPropertySchemaChange IsNew="true" OriginalName="StreetAddress1" />
+        <EntityPropertySchemaChange IsNew="true" OriginalName="StreetAddress2" />
+        <EntityPropertySchemaChange IsNew="true" OriginalName="City" />
+        <EntityPropertySchemaChange IsNew="true" OriginalName="Postcode" />
       </PropertyChanges>
     </EntitySchemaChange>
   </EntityChanges>
